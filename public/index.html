@@ -6,7 +6,15 @@
 </head>
 <body ng-app>
   {{"Hello " + "Angular!"}}
-  <div>{{2 + 3}}</div>
+  <div>
+    {{ 2 + 3 }}
+  </div>
+
+  <input type="text" ng-model="firstName" placeholder="Your Name?">
+  <div>
+    {{ firstName }}
+  </div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
 </body>
 </html>

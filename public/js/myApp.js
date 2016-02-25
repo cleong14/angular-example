@@ -11,3 +11,7 @@ myApp
     // start application
     console.log('starting...');
   });
+
+  myApp.controller('MyController',['$scope', function($scope) {
+    $scope.myFirstName = 'Chaz';
+  }]);

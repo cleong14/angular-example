@@ -10,13 +10,16 @@
     {{ 2 + 3 }}
   </div>
 
-  <input type="text" ng-model="firstName" placeholder="Your Name?">
-  <div>
-    {{ firstName }}
-  </div>
-
   <div ng-controller="MyController">
     {{ myFirstName }}
+
+    <br>
+    
+    <input type="text" ng-model="myModel">
+    <div>
+      {{ myModel }}
+    </div>
+
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>

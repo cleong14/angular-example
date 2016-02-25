@@ -7,7 +7,11 @@ myApp
   .config(function () {
     // set up configuration
   })
-  .run(function () {
-    // start application
-    console.log('starting...');
-  });
+  .run([
+    '$rootScope',
+    'APP_VERSION',
+    function ($rootScope, APP_VERSION) {
+      // start application
+      $rootScope.version = APP_VERSION;
+    }
+  ]);

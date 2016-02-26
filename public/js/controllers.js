@@ -5,12 +5,14 @@ myApp.controller('MyController', [
   'mainCharacter',
   'CharacterVersionFactory',
   'BookService',
-  function($scope, mainCharacter, CharacterVersionFactory, BookService) {
+  'Movies',
+  function($scope, mainCharacter, CharacterVersionFactory, BookService, Movies) {
     $scope.myFirstName = 'Chaz';
     $scope.myModel = 'Ready Player One';
     $scope.mainCharacter = mainCharacter;
     $scope.characterVersion = CharacterVersionFactory;
     $scope.books = BookService.getBooks();
     $scope.BookService = BookService;
+    $scope.Movies = Movies;
   }
 ]);

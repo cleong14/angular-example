@@ -35,7 +35,7 @@
     <input type="text" ng-model="searchBookTitle" placeholder="Book Title">
     <br>
     <ul>
-      <li class="book" ng-repeat="book in books | filter:searchBookTitle">
+      <li class="book" ng-repeat="book in books | filter: {title: searchBookTitle}">
         <h4 class="book_title" ng-click="">{{book.title}}</h4>
         <p class="book_author">{{book.author}}</p>
       </li>

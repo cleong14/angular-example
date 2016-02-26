@@ -1,4 +1,4 @@
-angular.module('myApp', ['ngRoute']);
+angular.module('myApp', ['ngRoute', 'ngAnimate']);
 
 // good practice to always use myApp and use angular to go and fetch it
 var myApp = angular.module('myApp');

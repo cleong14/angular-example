@@ -4,10 +4,10 @@ myApp.service('BookService', [BookService]);
 
 function BookService () {
   var books = this.books = [
-  { title: 'Harry Potter', author: 'Some Body' },
-  { title: 'The Hobbit', author: 'Some Body' },
-  { title: 'Javascript for Dummies', author: 'Some Body' },
-  { title: 'Coding for Dummies', author: 'Some Body' }
+  { title: 'Harry Potter', author: 'J. K. Rowling' },
+  { title: 'The Hobbit', author: 'J. R. R. Tolkien' },
+  { title: 'Javascript for Dummies', author: 'Emily A. Vander Veer' },
+  { title: 'Coding for Dummies', author: 'Nikhil Abraham' }
   ];
 
   this.addBook = function (title, author) {

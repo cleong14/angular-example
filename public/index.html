@@ -31,9 +31,11 @@
       <input type="text" ng-model="author">
       <button ng-click="BookService.addBook(title, author); title=''; author='';">Add Book</button>
     </form>
+    <h1>Search Books By Title: {{searchBookTitle}}</h1>
+    <input type="text" ng-model="searchBookTitle" placeholder="Book Title">
     <br>
     <ul>
-      <li class="book" ng-repeat="book in books">
+      <li class="book" ng-repeat="book in books | filter:searchBookTitle">
         <h4 class="book_title" ng-click="">{{book.title}}</h4>
         <p class="book_author">{{book.author}}</p>
       </li>

@@ -25,7 +25,12 @@
     <br>
     Character Version: {{ characterVersion }}
     <br>
-    Books: {{ books }}
+    <ul>
+      <li class="book" ng-repeat="book in books">
+        <h4 class="book_title">{{book.title}}</h4>
+        <p class="book_author">{{book.author}}</p>
+      </li>
+    </ul>
   </div>
 
   Version {{ version }}
